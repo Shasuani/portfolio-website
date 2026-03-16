@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* PROJECTS */
+
+section {
+    margin-top: 40px;
+}
+
+/* SKILLS */
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-container i {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+}
