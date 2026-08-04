@@ -1,8 +1,2 @@
-let seconds = 0;
-
-function updateTimer() {
-    seconds++;
-    document.getElementById("timer").textContent = seconds;
-}
-
-setInterval(updateTimer, 1000);
+// Keep the footer year current without editing the markup every January.
+document.getElementById("year").textContent = new Date().getFullYear();
