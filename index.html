@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shasuani Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shasuani — developer building business websites with Astro and Tailwind CSS.">
+    <title>Shasuani — Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
         <h1>Shasuani</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,40 +23,89 @@
 
     <section id="about" class="about">
         <div class="about-text">
-            <h2>About Me</h2>
-            <p>Hi! I'm Shasuani, a junior software developer. Welcome to my World.</p>
-            <p>I love coding and the plan is to become one of the best.</p>
-            <p>In my free time I like to read for self improvement and also build things.</p>
-            <p>Fun fact! I've been programming for <span id="timer">0</span> seconds!</p>
+            <h2>About</h2>
+            <p>
+                I'm a developer building business websites with Astro and Tailwind CSS,
+                while levelling up in JavaScript and TypeScript.
+            </p>
+            <p>
+                I learn by shipping. Every project on this page is something I built end to end —
+                layout and styling through to SEO, build configuration and automated deployment.
+            </p>
+            <p>
+                Right now I'm working through TypeScript in more depth, picking up React, and
+                paying closer attention to performance and accessibility.
+            </p>
         </div>
-        <div class="about-image">
-            <img src="https://cdn.shopify.com/s/files/1/0070/5901/3716/files/coding_background.jpg?v=1688538955" alt="Programming">
+        <div class="about-panel">
+            <pre><code>const focus = [
+  "Astro",
+  "Tailwind CSS",
+  "TypeScript"
+];</code></pre>
         </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>The first computer program</li>
-            <li>The Analytical Engine</li>
-            <li>The Ada programming language</li>
-        </ul>
+        <div class="project-grid">
+
+            <article class="project">
+                <h3>Fedari — Home Maintenance Website</h3>
+                <p>
+                    Marketing site for a Dubai home-maintenance company. Component-driven pages for
+                    services, plans, careers and contact, with a lead capture form, SEO metadata and
+                    a generated sitemap. Deploys to GitHub Pages on every push to <code>main</code>.
+                </p>
+                <p class="tags">Astro · Tailwind CSS · TypeScript · GitHub Actions</p>
+            </article>
+
+            <article class="project">
+                <h3>Portfolio Website</h3>
+                <p>
+                    This site. Built without a framework so I could get comfortable with semantic
+                    markup, responsive layout and vanilla DOM scripting before reaching for tooling.
+                </p>
+                <p class="tags">HTML · CSS · JavaScript</p>
+            </article>
+
+            <article class="project">
+                <h3>Message Generator</h3>
+                <p>
+                    A small JavaScript exercise that assembles random sentences from word banks —
+                    a first pass at arrays, functions and pseudo-random selection.
+                </p>
+                <p class="tags">JavaScript</p>
+            </article>
+
+        </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-container">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-git-alt"></i>
-            <i class="fa-brands fa-aws"></i>
-        </div>
+        <ul class="skills-container">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Astro</li>
+            <li>Tailwind CSS</li>
+            <li>Git</li>
+            <li>GitHub Actions</li>
+        </ul>
+        <p class="note">Currently learning: React, web performance and accessibility.</p>
     </section>
 
-    <footer id="contact">
-        <p>Made from DeviPix3l</p>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            The best place to reach me is GitHub —
+            <a href="https://github.com/Shasuani">github.com/Shasuani</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Shasuani</p>
     </footer>
 
     <script src="script.js"></script>
