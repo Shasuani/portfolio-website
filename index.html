@@ -1,113 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Shasuani — developer building business websites with Astro and Tailwind CSS.">
-    <title>Shasuani — Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Konstantinos Kolta — Junior Software Engineer</title>
+  <meta name="description" content="Konstantinos Kolta — junior software engineer and Computer Science student in Athens, Greece. TypeScript, React / React Native, Node.js, Python & FastAPI. Web, desktop and mobile apps, built end to end." />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Konstantinos Kolta — Junior Software Engineer" />
+  <meta property="og:description" content="Web, desktop and mobile apps, built end to end. TypeScript, React, Node.js, Python & FastAPI." />
+  <meta property="og:image" content="https://shasuani.github.io/portfolio-website/assets/agoncup.jpg" />
+  <meta property="og:url" content="https://shasuani.github.io/portfolio-website/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Konstantinos Kolta","alternateName":"Shasuani","jobTitle":"Junior Software Engineer","address":{"@type":"PostalAddress","addressLocality":"Athens","addressCountry":"GR"},"url":"https://shasuani.github.io/portfolio-website/","sameAs":["https://github.com/Shasuani","https://www.linkedin.com/in/konstantinoskolta"]}
+  </script>
 </head>
-
 <body>
-    <header>
-        <h1>Shasuani</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <section id="about" class="about">
-        <div class="about-text">
-            <h2>About</h2>
-            <p>
-                I'm a developer building business websites with Astro and Tailwind CSS,
-                while levelling up in JavaScript and TypeScript.
-            </p>
-            <p>
-                I learn by shipping. Every project on this page is something I built end to end —
-                layout and styling through to SEO, build configuration and automated deployment.
-            </p>
-            <p>
-                Right now I'm working through TypeScript in more depth, picking up React, and
-                paying closer attention to performance and accessibility.
-            </p>
-        </div>
-        <div class="about-panel">
-            <pre><code>const focus = [
-  "Astro",
-  "Tailwind CSS",
-  "TypeScript"
-];</code></pre>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-
-            <article class="project">
-                <h3>Fedari — Home Maintenance Website</h3>
-                <p>
-                    Marketing site for a Dubai home-maintenance company. Component-driven pages for
-                    services, plans, careers and contact, with a lead capture form, SEO metadata and
-                    a generated sitemap. Deploys to GitHub Pages on every push to <code>main</code>.
-                </p>
-                <p class="tags">Astro · Tailwind CSS · TypeScript · GitHub Actions</p>
-            </article>
-
-            <article class="project">
-                <h3>Portfolio Website</h3>
-                <p>
-                    This site. Built without a framework so I could get comfortable with semantic
-                    markup, responsive layout and vanilla DOM scripting before reaching for tooling.
-                </p>
-                <p class="tags">HTML · CSS · JavaScript</p>
-            </article>
-
-            <article class="project">
-                <h3>Message Generator</h3>
-                <p>
-                    A small JavaScript exercise that assembles random sentences from word banks —
-                    a first pass at arrays, functions and pseudo-random selection.
-                </p>
-                <p class="tags">JavaScript</p>
-            </article>
-
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Astro</li>
-            <li>Tailwind CSS</li>
-            <li>Git</li>
-            <li>GitHub Actions</li>
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Konstantinos Kolta — home">
+        <img src="assets/avatar.png" alt="" width="32" height="32" />
+        <span>Konstantinos Kolta</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="btn btn--small" href="#contact">Contact</a></li>
         </ul>
-        <p class="note">Currently learning: React, web performance and accessibility.</p>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <p class="status"><span class="dot" aria-hidden="true"></span> Open to work · Athens, Greece</p>
+        <h1>Junior software engineer building <span class="grad">web, desktop &amp; mobile</span> apps end to end.</h1>
+        <p class="lead">I'm Konstantinos, a Computer Science student at the University of East London and a freelance web developer. I take products from data model and API through to interface, CI and deployment. My main tools are TypeScript, React / React Native, Node.js and Python &amp; FastAPI.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#work">View my work</a>
+          <a class="btn btn--ghost" href="https://github.com/Shasuani" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/konstantinoskolta" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+        <ul class="stats" aria-label="At a glance">
+          <li><strong>5</strong><span>Discord communities on AgonCup</span></li>
+          <li><strong>10+</strong><span>projects built</span></li>
+          <li><strong>4</strong><span>languages spoken</span></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            The best place to reach me is GitHub —
-            <a href="https://github.com/Shasuani">github.com/Shasuani</a>.
-        </p>
+    <!-- FEATURED -->
+    <section id="work" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Featured project</p>
+        <article class="featured reveal">
+          <a class="featured__media" href="https://github.com/Shasuani/AgonCup" target="_blank" rel="noopener">
+            <img src="assets/agoncup.jpg" alt="AgonCup — tournament operations console banner" loading="lazy" width="1200" height="630" />
+          </a>
+          <div class="featured__body">
+            <h2>AgonCup</h2>
+            <p class="featured__tag">Multi-tenant esports tournament platform · team project · <span class="live">● Public beta</span></p>
+            <p>Used by <b>5 large Greek Discord communities</b>. Any Discord server can invite the bot and run its own tournaments, with up to 16 teams each and many running in parallel. An Electron desktop client <b>creates and starts custom lobbies automatically</b> through the local League client API, with server-side host failover. A result is accepted only when <b>at least 6 of 10 player reports agree</b> and both teams are represented.</p>
+            <ul class="bullets">
+              <li>FastAPI backend with Discord OAuth2 + JWT, realtime WebSockets and an arq worker</li>
+              <li>PostgreSQL <b>row-level security</b> isolates every server's data, tested in CI</li>
+              <li>React admin console with a dispute / override queue and an audit log</li>
+              <li>Running the beta with real users: triaging bug reports, reproducing issues and shipping fixes</li>
+            </ul>
+            <ul class="tags">
+              <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>WebSockets</li><li>Electron</li><li>React</li><li>TypeScript</li><li>Docker</li>
+            </ul>
+            <div class="links">
+              <a href="https://lol.gameras.gr" target="_blank" rel="noopener">Live beta ↗</a>
+              <a href="https://github.com/Shasuani/AgonCup" target="_blank" rel="noopener">Source &amp; architecture ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <p class="eyebrow eyebrow--spaced">More work</p>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⚙️</div>
+            <h3>Agency OS</h3>
+            <p>Operations app for a solo web business. A background worker watches an inbox over the Gmail API, classifies incoming mail and drafts follow-ups into an <b>approval queue</b> instead of sending blind.</p>
+            <ul class="tags"><li>Next.js</li><li>Supabase</li><li>Postgres</li><li>TypeScript</li><li>pnpm monorepo</li></ul>
+            <div class="links"><a href="https://github.com/Shasuani/agency-os" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🏆</div>
+            <h3>Ranked Study App</h3>
+            <p>A study timer built as a ranked ladder: finish focus sessions to earn XP and LP and climb tiers. Layered Express API with JWT auth, validation and rate limiting, plus a React Native client.</p>
+            <ul class="tags"><li>Node.js</li><li>Express</li><li>Prisma</li><li>JWT</li><li>React Native</li></ul>
+            <div class="links">
+              <a href="https://github.com/Shasuani/ranked-study-app-backend" target="_blank" rel="noopener">API ↗</a>
+              <a href="https://github.com/Shasuani/ranked-study-app-mobile" target="_blank" rel="noopener">Mobile ↗</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">📈</div>
+            <h3>Ascend</h3>
+            <p>Mobile app that turns long-term goals into a daily plan. AI-generated weekly plans through a Cloudflare Worker proxy, with an on-device fallback so it works fully offline. Pure game logic is unit-tested.</p>
+            <ul class="tags"><li>React Native</li><li>Expo</li><li>Cloudflare Workers</li><li>Jest</li></ul>
+            <div class="links"><a href="https://github.com/Shasuani/ascend-mobile-app" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+
+          <article class="card card--media reveal">
+            <img src="assets/fedari.jpg" alt="Fedari website homepage" loading="lazy" width="1200" height="750" />
+            <h3>Fedari</h3>
+            <p>Marketing site for a Dubai home-maintenance company: generated service pages, accessible lead forms, JSON-LD, sitemap and CI deploys.</p>
+            <ul class="tags"><li>Astro</li><li>Tailwind CSS</li><li>TypeScript</li><li>GitHub Actions</li></ul>
+            <div class="links">
+              <a href="https://shasuani.github.io/fedari-web/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Shasuani/fedari-web" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </article>
+
+          <article class="card card--media reveal">
+            <img src="assets/chris.jpg" alt="Chris Solutions website homepage" loading="lazy" width="1200" height="750" />
+            <h3>Chris Solutions</h3>
+            <p>Marketing site for an electrical contractor in Hasselt, Belgium, built with React and Vite and deployed to GitHub Pages.</p>
+            <ul class="tags"><li>React</li><li>Vite</li><li>JavaScript</li></ul>
+            <div class="links">
+              <a href="https://shasuani.github.io/chris-solutions/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Shasuani/chris-solutions" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </article>
+
+          <article class="card card--media reveal">
+            <img src="assets/devipix.jpg" alt="DeviPix retro terminal website" loading="lazy" width="1200" height="750" />
+            <h3>DeviPix</h3>
+            <p>A studio site that's an interactive retro CRT terminal, with an optional AI assistant behind a Cloudflare Worker. No framework, about 40 KB.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Cloudflare</li></ul>
+            <div class="links"><a href="https://github.com/Shasuani/devipix-web" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🌃</div>
+            <h3>Tokyo Night CV</h3>
+            <p>An explorable CV: walk a neon-lit city where each building opens a section of the CV. Built with Three.js and no framework.</p>
+            <ul class="tags"><li>Three.js</li><li>WebGL</li><li>JavaScript</li></ul>
+            <div class="links"><a href="https://github.com/Shasuani/tokyo-night-cv" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">🛰️</div>
+            <h3>Identity Hub</h3>
+            <p>A cinematic, scroll-driven single-page site about personal data collection, with 3D scenes and animated charts.</p>
+            <ul class="tags"><li>Three.js</li><li>Chart.js</li><li>Vite</li></ul>
+            <div class="links"><a href="https://github.com/Shasuani/identity-hub-website" target="_blank" rel="noopener">Code ↗</a></div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Shasuani</p>
-    </footer>
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="wrap">
+        <p class="eyebrow">Toolbox</p>
+        <h2 class="h2">Skills</h2>
+        <div class="skills">
+          <div class="skill reveal"><h3>Programming</h3><p>TypeScript · JavaScript · Python · Java · SQL · HTML · CSS</p></div>
+          <div class="skill reveal"><h3>Front-end</h3><p>React · React Native · Expo · Electron · Astro · Tailwind CSS · Three.js</p></div>
+          <div class="skill reveal"><h3>Back-end</h3><p>Node.js · Express · Prisma · FastAPI · SQLAlchemy · PostgreSQL · Redis · Supabase</p></div>
+          <div class="skill reveal"><h3>Tooling &amp; DevOps</h3><p>Git · Docker · GitHub Actions · GitLab CI · Cloudflare Workers · Linux · pytest · Jest</p></div>
+          <div class="skill reveal"><h3>Also</h3><p>REST APIs · JWT · OAuth · WebSockets · LLM APIs</p></div>
+          <div class="skill reveal"><h3>Spoken languages</h3><p>English · Greek · Arabic (fluent) · French (B2)</p></div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 class="h2">I learn by shipping.</h2>
+        </div>
+        <div class="about__text">
+          <p>I'm a junior software engineer based in Athens and a BSc Computer Science student at the <b>University of East London</b> (graduating 2028), focusing on software engineering, web development and security.</p>
+          <p>Since 2024 I've worked as a <b>freelance web developer</b>, building websites and web apps for small businesses. My biggest project is <b>AgonCup</b>: a Python backend, background worker, Discord bot, desktop client and admin console in one monorepo with CI. It's now in public beta with real users. I care about clear architecture, honest documentation and tests that let me refactor without fear.</p>
+          <p>I also bring years of customer-facing work in four languages, so I'm comfortable talking to users and turning their feedback into fixes. I hold the Codecademy Full-Stack Engineer certification, and I'm looking for a role where I can keep building real products with a team.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="wrap contact__inner reveal">
+        <h2 class="h2">Let's talk.</h2>
+        <p>I'm open to full-time developer roles. The quickest way to reach me is LinkedIn.</p>
+        <div class="hero__cta">
+          <a class="btn" href="https://www.linkedin.com/in/konstantinoskolta" target="_blank" rel="noopener">Message me on LinkedIn ↗</a>
+          <a class="btn btn--ghost" href="https://github.com/Shasuani" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> Konstantinos Kolta</span>
+      <span>Hand-built with HTML, CSS &amp; vanilla JS · <a href="https://github.com/Shasuani/portfolio-website" target="_blank" rel="noopener">source</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

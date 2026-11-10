@@ -1,25 +1,21 @@
-# Portfolio Website
+# Konstantinos Kolta — Portfolio
 
-My personal portfolio, built from scratch with HTML, CSS and vanilla JavaScript — no framework and no build step. The goal was to get comfortable with semantic markup, responsive layout and DOM scripting before reaching for tooling.
+My personal portfolio site, built by hand with **HTML, CSS and vanilla JavaScript**. No framework and no build step.
 
-## Technologies Used
+**Live:** https://shasuani.github.io/portfolio-website/
 
-* HTML
-* CSS (Flexbox, Grid, media queries)
-* JavaScript
-* Git
+![Portfolio screenshot](docs/screenshot.jpg)
 
 ## Features
 
-* Semantic sections for about, projects, skills and contact
-* Responsive layout that collapses to a single column on small screens
-* Project cards laid out with CSS Grid
-* Smooth scrolling navigation
-* Footer year kept current in JavaScript
+- Dark, responsive design built with CSS Grid and Flexbox, from 320px phones to wide desktops
+- Featured project section plus a project grid with live-site screenshots
+- Scroll-reveal animations with `IntersectionObserver`, disabled under `prefers-reduced-motion`
+- Accessibility: skip link, visible focus states, semantic landmarks and alt text
+- SEO: meta description, Open Graph tags and `schema.org` Person JSON-LD
+- Deployed with GitHub Pages straight from `main`
 
-## Running it locally
-
-No dependencies and no build step — clone the repository and open `index.html` in a browser:
+## Run locally
 
 ```bash
 git clone https://github.com/Shasuani/portfolio-website.git
